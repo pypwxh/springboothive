@@ -1,0 +1,26 @@
+
+#server configuration
+server:
+  port: 9000
+  address: localhost
+
+
+#hive configuration
+hive:
+  url: jdbc:hive2://10.22.2.97
+  port: 10000
+  schema: personadw
+  user: tableau
+  password:
+
+#impala configuration
+impala:
+  url: jdbc:hive2://dn2.dooioo.com
+  port: 21050
+  schema: personadw
+  user: tableau
+  password:
+  driverClass: org.apache.hive.jdbc.HiveDriver
+  fullUrl: fullUrl=jdbc:hive2://dn2.dooioo.com:21050/;auth=noSasl
+
+
