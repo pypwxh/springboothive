@@ -33,7 +33,7 @@ public class HiveConnTest {
     @Test
     public void impalaConnTest(){
         String sql = "select * from personadw.person_weiliao";
-        List<BaseItem> baseItemList = hiveJdbcTemplate.query(sql, new BaseItemMapper());
+        List<BaseItem> baseItemList = impalaJdbcTemplate.query(sql, new BaseItemMapper());
         System.out.println("count:"+baseItemList.size());
     }
 }
