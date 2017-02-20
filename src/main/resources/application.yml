@@ -4,6 +4,10 @@ server:
   port: 9000
   address: localhost
 
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
 
 #hive configuration
 hive:
